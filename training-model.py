@@ -100,7 +100,7 @@ first_image = image_batch[0]
 # Notice the pixels values are now in `[0,1]`.
 print(np.min(first_image), np.max(first_image))
 
-num_classes = 2     #**************************
+num_classes = 2     #***************************
 
 model = Sequential([
     layers.experimental.preprocessing.Rescaling(1. / 255, input_shape=(img_height, img_width, 3)),
